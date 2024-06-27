@@ -125,7 +125,7 @@ app.post('/createAlert', (req, res) => {
   res.status(200).send('Alerta recibida y procesada');
 });
 
-const PORT = process.env.PORT || 56000;
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
     console.log(`Servidor funcionando en el puerto ${PORT}`);
 });
