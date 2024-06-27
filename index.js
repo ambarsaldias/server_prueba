@@ -80,7 +80,7 @@ app.post('/createAlert', (req, res) => {
   const { gravedad, maquinaria, tipo, area, usuario, uid, descripcion } = req.body;
 
   const sendNotification = (title, body) => {
-    let icon, sound;
+    let color, sound;
 
       switch (gravedad) {
           case 'Alta':
